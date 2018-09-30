@@ -15,3 +15,15 @@ svg.selectAll('rect')
    .attr("width", 25)
    .attr("height", 100)
    .attr("class", "bar");
+
+   <!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" type="text/javascript"></script>
+  <script src="d3BarChart.js" type="text/javascript"></script>
+  <script src="d3BarChart.css" type="text/css"></script>
+</head>
+<body>
+  <h1 id="title">U.S. Gross Domestic Product</h1>
+</body>
+</html>
