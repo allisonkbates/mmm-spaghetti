@@ -30,7 +30,14 @@ const svg2 = d3.select("body")
                .attr('height', h + 100);
 
 d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json").then(function(data) {
-  console.log(data.data); // [{"Hello": "world"}, …]
+  svg2.selectAll('rect')
+      .dataset(data.data)
+      .enter()
+      .append('rect')
+      .attr("x", (d, i))
+     .append('span')
+     .text(data.data);
+  console.log(data.data);
 });
 
 //console.log(dataset2.data);
