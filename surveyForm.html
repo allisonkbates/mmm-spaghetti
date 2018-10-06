@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Falling for Fall Survey</h1>
+    <p id="description">Tell us about all of your favorite fall activities!</p>
+  </header>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <label for="email" id="email-label">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <label for="number" id="number-label">On a scale of 1-10, how much do you like fall?</label>
+    <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10">
+    <label for="dropdown" id="dropdown-label">Have you had a Pumpkin Spice Latte yet this season?</label>
+    <select id="dropdown">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <fieldset>
+      <legend>What is your favorite type of pumpkin beer?</legend>
+      <input type="radio" id="radio" name="radio" value="Southern Tier Pumking">
+      <label for="Souther Tier Pumking">Southern Tier Pumking</label>
+      <input type="radio" id="radio" name="radio" value="Blue Moon Pumpkin">
+      <label for="Blue Moon Pumpkin">Blue Moon Pumpkin</label>
+      <input type="radio" id="radio" name="radio" value="Sam Adams Pumpkin">
+      <label for="Sam Adams Pumpkin">Sam Adams Pumpkin</label>
+    </fieldset>
+    <fieldset>
+      <legend>Check off which activities you plan to participate in this fall:</legend>
+      <input type="checkbox" id="checkbox" name="checkbox" value="Drinking Pumpkin Spice Lattes">
+      <label for="Drinking Pumpkin Spice Lattes">Drinking Pumpkin Spice Lattes</label>
+      <input type="checkbox" id="checkbox" name="checkbox" value="Drinking Pumpkin Beer">
+      <label for="Drinking Pumpkin Beer">Drinking Pumpkin Beer</label>
+      <input type="checkbox" id="checkbox" name="checkbox" value="Going to Pumpkin Patches">
+      <label for="Going to Pumpkin Patches">Going to Pumpkin Patches</label>
+      <input type="checkbox" id="checkbox" name="checkbox" value="Wearing Plaid & Scarves">
+      <label for="Wearing Plaid & Scarves">Wearing Plaid & Scarves</label>
+    </fieldset>
+    <label for="textarea">Any other fall activities that we missed?</label>
+    <textarea id="textarea" rows="4" cols="50"></textarea>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+
+</html>

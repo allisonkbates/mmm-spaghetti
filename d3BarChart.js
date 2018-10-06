@@ -3,12 +3,8 @@
 //https://bl.ocks.org/d3noob/0e276dc70bb9184727ee47d6dd06e915
 
 d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json").then(function(data) {
-  var fullData = data.data;
-  var parseTime = d3.timeParse("%d-%b-%y");
-  fullData.forEach(function(d) {
-    date = parseTime(d[0]);
-  });
-  console.log(date);  
+
+  console.log(data.data);  
 
   const w = 1000;
   const h = 1000;
@@ -31,7 +27,11 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
 console.log(data.data);
 });
 /*
-
+  var fullData = data.data;
+  var parseTime = d3.timeParse("%d-%b-%y");
+  fullData.forEach(function(d) {
+    date = parseTime(d[0]);
+  });
     
   const xAxis = d3.axisBottom(xScale);
 

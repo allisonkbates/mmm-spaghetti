@@ -1,0 +1,39 @@
+body {
+  font-family: "Raleway", Helvetica, sans-serif;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas: 
+    "header header header"
+    "space-left body space-right"
+    "footer footer footer";
+}
+
+header {
+  background-color: LightBlue;
+  grid-area: header;
+  text-align: center;
+}
+
+form {
+  background-color: LightGray;
+  padding: 50px;
+  grid-area: body;
+}
+
+label {
+  display: inline-block;
+  padding: 10px;
+  margin: 0px;
+}
+
+input {
+  
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+  margin: 0px;
+}
