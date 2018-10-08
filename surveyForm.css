@@ -1,6 +1,10 @@
+/*#F7EFD4, #FADDAF, #EB712F, #91371B, #472C25, #D4C2B2*/
+
+
 body {
-  font-family: "Raleway", Helvetica, sans-serif;
-  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #dedede;
+  color: #666;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr 5fr 1fr;
@@ -11,15 +15,16 @@ body {
 }
 
 header {
-  background-color: LightBlue;
   grid-area: header;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 form {
-  background-color: LightGray;
+  background-color: white;
   padding: 50px;
   grid-area: body;
+  border-radius: 5px;
 }
 
 label {
@@ -29,7 +34,23 @@ label {
 }
 
 input {
-  
+  height: 30px;
+  width: 200px;
+  padding: 0px 5px 0px 5px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+h1 {
+ 
 }
 
 fieldset {

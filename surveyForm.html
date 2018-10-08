@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="surveyForm.css" type="text/css">
 </head>
 
 <body>
@@ -10,10 +11,12 @@
     <p id="description">Tell us about all of your favorite fall activities!</p>
   </header>
   <form id="survey-form">
-    <label for="name" id="name-label">Name</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    <label for="email" id="email-label">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <div class="info">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email" id="email-label">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
     <label for="number" id="number-label">On a scale of 1-10, how much do you like fall?</label>
     <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10">
     <label for="dropdown" id="dropdown-label">Have you had a Pumpkin Spice Latte yet this season?</label>
