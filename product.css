@@ -1,0 +1,19 @@
+.navbar {
+	margin: 0;
+}
+
+input[type=email] {
+	width: 200px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form {
+	display: block;
+	width: 300px;
+	margin: -150px 0px 0px 800px;
+}
