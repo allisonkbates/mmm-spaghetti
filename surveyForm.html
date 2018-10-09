@@ -11,12 +11,10 @@
     <p id="description">Tell us about all of your favorite fall activities!</p>
   </header>
   <form id="survey-form">
-    <div class="info">
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      <label for="email" id="email-label">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    </div>
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <label for="email" id="email-label">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
     <label for="number" id="number-label">On a scale of 1-10, how much do you like fall?</label>
     <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10">
     <label for="dropdown" id="dropdown-label">Have you had a Pumpkin Spice Latte yet this season?</label>
@@ -33,7 +31,7 @@
       <input type="radio" id="radio" name="radio" value="Sam Adams Pumpkin">
       <label for="Sam Adams Pumpkin">Sam Adams Pumpkin</label>
     </fieldset>
-    <fieldset>
+    <fieldset class='checkbox'>
       <legend>Check off which activities you plan to participate in this fall:</legend>
       <input type="checkbox" id="checkbox" name="checkbox" value="Drinking Pumpkin Spice Lattes">
       <label for="Drinking Pumpkin Spice Lattes">Drinking Pumpkin Spice Lattes</label>

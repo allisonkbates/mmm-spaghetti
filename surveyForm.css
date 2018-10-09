@@ -25,6 +25,7 @@ form {
   padding: 50px;
   grid-area: body;
   border-radius: 5px;
+  display: block;
 }
 
 label {
@@ -33,28 +34,81 @@ label {
   margin: 0px;
 }
 
-input {
+legend {
+  display: inline-block;
+  padding: 10px;
+  margin: 0px;
+}
+
+input[type=text], input[type=email], input[type=number], select {
   height: 30px;
   width: 200px;
   padding: 0px 5px 0px 5px;
   border: 1px solid #dedede;
   border-radius: 5px;
+  background-color: white;
+  margin: 0px 0px 20px 0px; 
+  display: inline-block;
 }
 
-input:focus {
-  outline: 0;
+input[type=number], select {
+  width: 50px;;
 }
 
-.info {
+input[type=checkbox], input[type=radio] {
+  width: 15px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 0px 20px 20px;
+}
+
+input[type=checkbox] {
+  margin-bottom: 10px;
+}
+
+input:focus, select:focus {
+  outline-color: #EB712F;
+  outline-style: solid;
+  outline-width: thin;
+
+}
+
+.checkbox {
+  margin-right: 150px;
   margin-bottom: 20px;
-}
-
-h1 {
- 
 }
 
 fieldset {
   border: none;
-  padding: 10px;
-  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+}
+
+textarea {
+  display: block;
+  outline:0;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 15px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  height: 150px;
+  width: 500px;
+}
+
+input[type=submit] {
+  height: 30px;
+  width: 75px;
+  border-radius: 2px;
+  border: none;
+  background-color: #EB712F;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:  #EB712F;
+  border: 1px solid  #EB712F;
+}
+
+p {
+
 }
