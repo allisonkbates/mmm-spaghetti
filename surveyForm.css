@@ -22,7 +22,7 @@ header {
 
 form {
   background-color: white;
-  padding: 50px;
+  padding: 50px 100px;
   grid-area: body;
   border-radius: 5px;
   display: block;
