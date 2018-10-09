@@ -1,6 +1,3 @@
-/*#F7EFD4, #FADDAF, #EB712F, #91371B, #472C25, #D4C2B2*/
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #dedede;
@@ -22,7 +19,7 @@ header {
 
 form {
   background-color: white;
-  padding: 50px 100px;
+  padding: 50px;
   grid-area: body;
   border-radius: 5px;
   display: block;
@@ -107,8 +104,4 @@ input[type=submit]:hover {
   background-color: white;
   color:  #EB712F;
   border: 1px solid  #EB712F;
-}
-
-p {
-
 }
