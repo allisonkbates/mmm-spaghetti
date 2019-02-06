@@ -6,10 +6,13 @@ body {
 
 header {
     margin: 0px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     align-items: center;
     background-color: #789391;
+    position: fixed;
+    z-index:1;
+    width: 100%;
 }
 
 h1 {
@@ -63,17 +66,18 @@ a:hover {
 }
 
 section {
-    margin: 0px;
+    margin: 0;
     padding: 0px 0px;
-    height: 400px;
+    height: 525px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 video {
-    grid-column: 1/4;
+    grid-column: 2/4;
     grid-row: 1/3;
+    padding: 125px 0px 0px 0px;
 }
 
 form {
@@ -81,7 +85,7 @@ form {
     grid-row: 1/3;
 }
 
-button {
+input[type=submit] {
     background-color: #789391;
     color: #ffffff;
     border: none;
@@ -106,13 +110,15 @@ input {
 }
 
 .feature {
-    grid-row: 2/4;
+    grid-row: 2/5;
     margin: 0px 30px 30px 30px;
     background-color: #ffffff;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .one {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: #ffffff;
     padding: 50px;
 }
@@ -120,4 +126,5 @@ input {
 .two {
     background-color: #dedede;
     padding: 50px;
+    height: 325px;
 }
