@@ -1,5 +1,15 @@
 body {
     --main: #fbede7;
+    background-color: var(--main);
     font-family: 'Noto Sans', sans-serif;
-    
+    line-height: 1.5;
+}
+
+.content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 4em auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
