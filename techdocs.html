@@ -1,0 +1,93 @@
+<!-- html starter file -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="techdocs.css">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web|Lora" rel="stylesheet">
+        <title>Tech Doc</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>New Technology</header>
+            <ul>
+                <li><a class="nav-link" href="#Concept_1">Concept 1</a></li>
+                <li><a class="nav-link" href="#Concept_2">Concept 2</a></li>
+                <li><a class="nav-link" href="#Concept_3">Concept 3</a></li>
+                <li><a class="nav-link" href="#Concept_4">Concept 4</a></li>
+                <li><a class="nav-link" href="#Concept_5">Concept 5</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Concept_1">
+                <header>Concept 1</header>
+                <p>These are words about the first concept:</p>
+                <code>
+                    function palindrome(str) {
+                        var initial = str.toLowerCase().replace(/\W|_/g, '');
+                        if (initial.split('').reverse().join('') === initial) {
+                          return true;
+                        } else {
+                          return false;
+                      }
+                      
+                      }
+                      palindrome("eye am not");
+                </code>
+                <p>Isn't this great?</p>
+            </section>
+            <section class="main-section" id="Concept_2">
+                <header>Concept 2</header>
+                <p>Here is some more documentation to help you understand concept 2.</p>
+                <p>Learning to code isn't too bad, right?</p>
+                <code>
+                    <p>Hello World!</p>
+                </code>
+                <p>Do you know the following definitions?</p>
+                <ul>
+                    <li>var</li>
+                    <li>const</li>
+                    <li>let</li>
+                    <li>for loop</li>
+                    <li>if/then statement</li>
+                    <li>anonymous functions</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Concept_3">
+                <header>Concept 3</header>
+                <p>Here is some more documentation to help you understand concept 3.</p>
+                <p>Learning to code isn't too bad, right?</p>
+                <code>
+                    function hello(name) {
+                        return 'Hello ' + name;
+                    }
+                </code>
+            </section>
+            <section class="main-section" id="Concept_4">
+                <header>Concept 4</header>
+                <p>Concept 4 is tricky.</p>
+                <p>This time we're gonna write some SQL.</p>
+                <code>
+                    SELECT * FROM awesome_table
+                    WHERE name = "Allison%"
+                    LIMIT 10
+                </code>
+                <p>Nice work!</p>
+            </section>
+            <section class="main-section" id="Concept_5">
+                <header>Concept 5</header>
+                <p>Let's write one more function:</p>
+                <code> 
+                    var myName = "Allison";
+                    function double(n) {
+                        return n + n;
+                    }
+                </code>
+                <p>Have you learned anything yet?</p>
+            </section>
+            
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

@@ -1,5 +1,8 @@
 /* favorite colors*/
-
+body {
+    --fav-color: #ff004d;
+    
+}
 
 
 /* basic styles *

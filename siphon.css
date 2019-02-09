@@ -2,6 +2,8 @@ body {
    margin: 0px;
    font-family: 'Roboto', sans-serif;
    font-weight: 100;
+   --fav-color: #B2569A;
+   --fav-color-hover: #a04d8a;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
-    background-color: #789391;
+    background-color: var(--fav-color);
     position: fixed;
     z-index:1;
     width: 100%;
@@ -32,7 +34,7 @@ h2 {
 
 h3 {
     font-family: 'Kaushan Script', cursive;
-    color: #789391;
+    color: var(--fav-color);
     font-size: 48px;
     padding: 25px 50px 0px 0px;
     text-align: center;
@@ -86,7 +88,7 @@ form {
 }
 
 input[type=submit] {
-    background-color: #789391;
+    background-color:var(--fav-color);
     color: #ffffff;
     border: none;
     height: 25px;
@@ -96,7 +98,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #607876;
+    background-color: var(--fav-color-hover);
 }
 
 input {
@@ -109,7 +111,7 @@ input {
 }
 
 footer {
-    background-color: #789391;
+    background-color: var(--fav-color);
     height: 75px;
 }
 
