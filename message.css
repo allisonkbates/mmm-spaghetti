@@ -1,15 +1,118 @@
 body {
-    --main: #fbede7;
-    background-color: var(--main);
+    --main-bg: #fbede7;
+    --app-bg: #f9f9f9;
+    --gradient-1: rgb(252, 74, 26);
+    --gradient-2:  rgb(247, 183, 51);
+    --grey: #999;
+    background: var(--main-bg);
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.5;
 }
 
 .content {
-    background-color: #fff;
+    background: white;
     max-width: 400px;
     margin: 4em auto;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.conversation-title {
+    padding: 15px;
+    background: linear-gradient(to bottom right, var(--gradient-1), var(--gradient-2));
+    text-align: center;
+    color: white;
+}
+
+.conversation-title h1 {
+    font: 700 18px 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.status {
+    font-size: 12px;
+}
+
+.conversation-wrapper {
+    background: var(--app-bg);
+    padding: 25px;
+    min-height: 500px;
+}
+
+.message-sent, .message-received {
+    padding: 0;
+}
+
+.message-received {
+    text-align: left;
+}
+
+.message-sent {
+    text-align: right;
+}
+
+.bubble {
+    background: white;
+    max-width: 70%;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: .5px solid rgba(0,0,0,0.02);
+    box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.timestamp {
+    margin: 8px 0;
+}
+
+.timestamp .avatar {
+    display: inline-block;
+    background: linear-gradient(to top right, var(--gradient-1), var(--gradient-2));
+    width: 25px;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.timestamp .time {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--grey);
+    margin: 0px 5px;
+}
+
+.messaging-area {
+    position: relative;
+    box-shadow: 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+.messaging-area input {
+    font: 16px 'Noto Sans', sans-serif;
+    border: none;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.messaging-area input:focus {
+    outline: 0;
+}
+
+a.send {
+    background: linear-gradient(to top right, var(--gradient-1), var(--gradient-2));
+    width: 25px;
+    height: 25px;
+    padding: 8px 10px 12px;
+    color: white;
+    position: absolute;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 50%;
+    right: 8px;
+    bottom: 8px;
 }

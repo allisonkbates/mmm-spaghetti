@@ -1,0 +1,77 @@
+<!-- credit to Olivia Ng from Codepen -- trying to build out her project for myself for my own learning.-->
+<!-- html starter file -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="emoji.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Fredoka+One" rel="stylesheet">
+        <script src="emoji.js"></script>
+        <title>😍 Emojis 😍</title>
+    </head>
+    <body>
+            <button id="myBtn">Try it</button>
+            <p id="demo"></p>
+        <div class="main-content">
+            <div class="emoji-name">
+                <div>Emoji&ensp;Factory</div>
+            </div>
+            <div class="emoji-preview">
+                <div class="emoji__wrapper">
+                    <div class="emoji-face">
+                        <div class="hat no-hat"></div>
+                        <div class="eyebrows">
+                            <div class="eyebrow left no-eyebrows"></div>
+                            <div class="eyebrow right no-eyebrows"></div>
+                        </div>
+                        <div class="eyes">
+                            <div class="eye left default"></div>
+                            <div class="eye right default"></div>
+                        </div>
+                        <div class="mouth default"></div>
+                        <div class="face-extras sweat"></div>
+                        <div class="item default"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="emoji-choices">
+                <div class="emoji-choices__header">skin color</div>
+                <div class="emoji-choices__group emoji-choices__group--skin">
+                    <div class="emoji-choice__skin selected js-choice" data-type="skin" data-multiple="no" data-name="skin-1"></div>
+                    <div class="emoji-choice__skin js-choice" data-type="skin" data-multiple="no" data-name="skin-2"></div>
+                    <div class="emoji-choice__skin js-choice" data-type="skin" data-multiple="no" data-name="skin-3"></div>
+                    <div class="emoji-choice__skin js-choice" data-type="skin" data-multiple="no" data-name="skin-4"></div>
+                    <div class="emoji-choice__skin js-choice" data-type="skin" data-multiple="no" data-name="skin-5"></div>
+                    <div class="emoji-choice__skin js-choice" data-type="skin" data-multiple="no" data-name="skin-6"></div>
+                </div>
+                <div class="emoji-choices__header">eyes</div>
+                <div class="emoji-choices__group">
+                    <div class="emoji-choice__item selected js-choice" data-type="eyes" data-multiple="no" data-name="default"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="startled"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="heart"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="star"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="fire"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="squeeze"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="closed-up"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="closed-down"></div>
+                    <div class="emoji-choice__item js-choice" data-type="eyes" data-multiple="no" data-name="lined"></div>
+                </div>
+                <div class="emoji-choices__header">mouth</div>
+                <div class="emoji-choices__group">
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="no-mouth"></div>
+                    <div class="emoji-choice__item selected js-choice" data-type="mouth" data-multiple="no" data-name="default"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="upside"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="open"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="tongue"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="lined"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="frown"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="smile"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="curse"></div>
+                    <div class="emoji-choice__item js-choice" data-type="mouth" data-multiple="no" data-name="grimace"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
