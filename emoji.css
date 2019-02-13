@@ -143,7 +143,38 @@ body {
     height: 30px;
 }
 
-.mouth {
+.eyes .eye.startled {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    top: -5px;
+}
+.eyes .eye.startled.left {
+    margin-left: -45px;
+}    
+
+.eyes .eye.startled.left {
+    margin-right: -48px;
+}
+
+.eyes .eye.startled:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #111;
+    border-radius: 50%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.eyes .eye.heart, .eyes .eye.star, .eyes .eye.fire, .eyes .eye.squeeze {
+    background: transparent;
+}
+
+.emoji-mouth {
     height: 25%;
     width: 58%;
     background: var(--black);
@@ -155,13 +186,13 @@ body {
     z-index: 4;
 }
 
-.mouth.default {
+.emoji-mouth.default {
     overflow: hidden;
     border: 3px solid var(--black);
     border-radius: 0 0 250px 250px;
 }
 
-.mouth.default:before {
+.emoji-mouth.default:before {
     height: 10px;
     width: 100%;
     background: white;
