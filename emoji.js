@@ -21,6 +21,7 @@ window.onload = function () {
         if (event.target.classList.contains('js-choice')) {
             if (type === "skin") {
                 skin.forEach(removeSelected);
+                emojiFace.classList.remove('skin-1', 'skin-2', 'skin-3', 'skin-4', 'skin-5', 'skin-6');
                 emojiFace.classList.add(name);
             }
             

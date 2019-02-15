@@ -272,18 +272,99 @@ body {
     z-index: 4;
 }
 
-.emoji-mouth.default {
+.emoji-mouth.default, .emoji-mouth.upside, .emoji-mouth.open, .emoji-mouth.tongue {
     overflow: hidden;
     border: 3px solid var(--black);
     border-radius: 0 0 250px 250px;
 }
 
-.emoji-mouth.default:before {
+.emoji-mouth.default:before, .emoji-mouth.upside:before, .emoji-mouth.open:before, .emoji-mouth.tongue:before {
     height: 10px;
     width: 100%;
     background: white;
     top: 0;
     left: 0;
+}
+
+.emoji-mouth.upside {
+    width: 45%;
+    border-radius: 250px 250px 120px 120px;
+}
+
+.emoji-mouth.lined {
+    height: 10px;
+    width: 30%;
+    border-radius: 20px;
+    bottom: 25%;
+}
+
+.emoji-mouth.open {
+    border-radius: 40px;
+    width: 20%;
+    height: 20%;
+}
+
+.emoji-mouth.tongue {
+    overflow: visible;
+}
+.emoji-mouth.tongue:before {
+    background: var(--red);
+    height: 52px;
+    width: 45%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.emoji-mouth.frown, .emoji-mouth.smile {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(-135deg);
+    box-shadow: 4px 4px 0 0 var(--black);
+}
+
+.emoji-mouth.smile {
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+}
+
+.emoji-mouth.curse:before {
+    content: "#@%!";
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 10px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.emoji-mouth.grimace {
+    border-radius: 40px;
+    background: #fff;
+    height: 30px;
+    bottom: 30px;
+    border: 2px solid;
+    background-image: linear-gradient(
+            to bottom,
+            transparent 14px,
+            var(--black) 14px,
+            #111 16px,
+            transparent 16px
+        ),
+        repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 14px,
+            #111 14px,
+            #111 16px,
+            transparent 16px
+        );
+}
+
+.emoji-mouth.no-mouth {
+    background: transparent;
 }
 
 .emoji-choices {
