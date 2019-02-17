@@ -1,19 +1,44 @@
 window.onload = function() {
-    document.addEventListener('click', function(event) {
-        if (event.target.classList.contains('submit')) {
-        var input = document.getElementById("input").value;
-        var wikiURL = 'https://en.wikipedia.org//w/api.php?action=opensearch&origin=*&format=json&search='
-        var apiURL = wikiURL + input;
-        fetch(apiURL)
-            .then(function(response) {
+	// creating variables for front end
+	function createElement(item) {
+		var results = document.getElementById('results');
+		var createDiv = document.createElement('div');
+		createDiv.innerHTML = item;
+		results.appendChild(createDiv);
+	}
+	// logic for when submit is clicked
+	document.addEventListener('click', function(event) {
+		if (event.target.classList.contains('submit')) {
+        	event.preventDefault();
+			var input = document.getElementById("input").value;
+			var wikiURL = 'https://en.wikipedia.org//w/api.php?action=opensearch&origin=*&format=json&search='
+			var apiURL = wikiURL + input;
+			fetch(apiURL)
+				.then(function(response) {
                 return response.json();
-            })
-            .then(function(myJson) {
-                console.log(myJson);
-            })
-        };
+				})
+            	.then(function(myJson) {
+					var data = myJson.slice();
+					createElement(myJson[0]);
+					myJson[1].forEach(function(item) {
+						createElement(item);
+					});
+					myJson[2].forEach(function(item) {
+						createElement(item);
+					});
+					myJson[3].forEach(function(item) {
+						createElement(item);
+					});
+					/*
+                	myJson.forEach(function(item) {
+						console.log(myJson);
+						createElement(item);
+                	});*/
+				});
+		};
     });
 }
+
 /*
 
 fetch('http://example.com/movies.json')
